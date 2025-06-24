@@ -36,6 +36,9 @@ target/
 build/
 !.mvn/wrapper/maven-wrapper.jar
 
+# Specifically ignore the target\classes directory
+target/classes/
+
 # Eclipse
 .project
 .classpath
@@ -57,3 +60,12 @@ Thumbs.db
 
 # Sauce Labs credentials (just in case)
 sauce.*
+
+
+# Compiled class files
+*.class
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+out/
