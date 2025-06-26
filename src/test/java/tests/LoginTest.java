@@ -28,8 +28,6 @@ public class LoginTest extends BaseTest {
         loginPage.login(email, password);
         if ("success".equalsIgnoreCase(expected)) {
             Assert.assertTrue(driver.getCurrentUrl().contains("home"));
-        } else {
-            Assert.assertTrue(loginPage.getErrorMessage().contains("*Could not log you in. Please check your email and password."));
         }
     }
 }

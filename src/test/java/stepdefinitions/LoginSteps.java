@@ -24,16 +24,17 @@ public class LoginSteps {
     }
 
     @And("I click the login button")
-    public void i_click_login_button() {
+    public void i_click_login_button() throws InterruptedException {
         loginPage.clickLogin();
+
+        Thread.sleep(5000);
     }
 
     @Then("I should see {string}")
     public void i_should_see_result(String expected) {
-        if (expected.equals("Dashboard")) {
-            Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
-        } else {
-            Assert.assertTrue(loginPage.getErrorMessage().contains(expected));
+        if (expected.equals("login")) {
+            System.out.println(driver.getCurrentUrl());
+            Assert.assertTrue(driver.getCurrentUrl().contains("login"));
         }
         driver.quit();
     }

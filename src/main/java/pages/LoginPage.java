@@ -41,8 +41,4 @@ public class LoginPage extends BasePage {
         enterPassword(password);
         clickLogin();
     }
-
-    public String getErrorMessage() {
-        return errorMessage.getText();
-    }
 }

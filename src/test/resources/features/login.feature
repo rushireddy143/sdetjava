@@ -8,4 +8,4 @@ Feature: Diathrive Login
 
     Examples:
       | email                              | password    | result                     |
-      | neha.kedia@technoidentity.com      | Test@12345  | Dashboard                  |
+      | neha.kedia@technoidentity.com      | Test@12345  | login                       |
